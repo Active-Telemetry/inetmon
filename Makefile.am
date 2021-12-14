@@ -1,0 +1,6 @@
+bin_PROGRAMS = inetmon
+
+inetmon_SOURCES = inetmon.c
+
+inetmon_CFLAGS =  @CFLAGS@ @PCAP_CFLAGS@ @GLIB_CFLAGS@ @NCURSES_CFLAGS@
+inetmon_LDADD = @PCAP_LIBS@ @GLIB_LIBS@ @NCURSES_LIBS@
